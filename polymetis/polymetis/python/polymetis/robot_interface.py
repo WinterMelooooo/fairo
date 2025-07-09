@@ -88,7 +88,6 @@ class BaseRobotInterface:
             if mirror_metadata
             else self.grpc_connection.GetRobotClientMetadata(EMPTY)
         )
-
         # Check version
         if enforce_version:
             client_ver = polymetis.__version__

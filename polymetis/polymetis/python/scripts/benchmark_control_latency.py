@@ -30,7 +30,10 @@ def output_episode_stats(episode_name, robot_states):
 
 
 if __name__ == "__main__":
-    robot = RobotInterface()
+    robot = RobotInterface(
+        ip_address="172.16.0.1",
+        port=50051
+    )
 
     print(
         "Control loop latency stats in milliseconds (avg / std / max / min / success_rate): "
